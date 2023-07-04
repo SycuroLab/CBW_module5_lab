@@ -68,7 +68,7 @@ fasterq-dump.
 | KGHS_9-0    | SRR19237608 | 1116676                       | 2x150       | 2x450MB   |
 | KGHS_15-0   | SRR19237617 | 3701058                       | 2x150       | 2x1.3GB   |
 
-<img src="media/image1.png" style="width:6.5in;height:5.11042in"
+<img src="images/media/image1.png" style="width:6.5in;height:5.11042in"
 alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 **Figure 1**: Overview of the assembly, binning, and annotation
@@ -95,7 +95,8 @@ metagenomic datasets.
 > values: -k 21,33,55,77,99,127. Must be odd numbers from 21 to 127. The
 > paper used the default settings for kmer values: -k 21,33,55.*
 
-<img src="media/image2.png" style="width:5.4771in;height:1.16803in"
+<img src="images/media/image2.png"
+style="width:5.4771in;height:1.16803in"
 alt="A close-up of a sign Description automatically generated with low confidence" />
 
 **Figure 2.** The MetaSPAdes step uses the quality control cleaned
@@ -165,7 +166,8 @@ allows for a quick check of the success of your metagenomic assembly and
 comparisons with different assembly parameters (such as -k values) or
 algorithms (such as IBDA-UD\[3\] or MEGAHIT\[4\]).
 
-<img src="media/image3.png" style="width:5.43229in;height:1.13753in"
+<img src="images/media/image3.png"
+style="width:5.43229in;height:1.13753in"
 alt="A close-up of a sign Description automatically generated with low confidence" />
 
 **Figure 3.** QUAST uses assembled contig or scaffold FASTA files as
@@ -226,10 +228,12 @@ minimum length of 1500 nt.
 tetranucleotide frequencies becoming poorly represented, yielding low
 quality MAGs.**
 
-<img src="media/image4.png" style="width:5.38925in;height:1.12852in"
+<img src="images/media/image4.png"
+style="width:5.38925in;height:1.12852in"
 alt="A picture containing text, font, screenshot, line Description automatically generated" />
 
-<img src="media/image5.png" style="width:5.36132in;height:1.12267in"
+<img src="images/media/image5.png"
+style="width:5.36132in;height:1.12267in"
 alt="A picture containing text, font, screenshot, line Description automatically generated" />
 
 **Figure 4.** Seqkit seq uses assembled contig or scaffold FASTA files
@@ -254,7 +258,8 @@ metagenome_assemblies/KGHS_1-0/contigs.fasta.seqkit.stats.txt</span>
 
 Example output:
 
-<img src="media/image6.png" style="width:6.5in;height:0.34097in" />
+<img src="images/media/image6.png"
+style="width:6.5in;height:0.34097in" />
 
 **\# Run seqkit stats on the KGHS_1-0 scaffolds.fasta file.**
 
@@ -264,7 +269,8 @@ metagenome_assemblies/KGHS_1-0/scaffolds.fasta.seqkit.stats.txt</span>
 
 Example output:
 
-<img src="media/image7.png" style="width:6.5in;height:0.34485in" />
+<img src="images/media/image7.png"
+style="width:6.5in;height:0.34485in" />
 
 **\# Run seqkit with the stats option on the length-filtered
 KGHS_1-0_min1500.fasta file to see how filtering affected the minimum
@@ -276,7 +282,8 @@ filtered_metagenomes/KGHS_1-0/KGHS_1-0_min1500.fasta.seqkit.stats.txt</span>
 
 Example output:
 
-<img src="media/image8.png" style="width:6.5in;height:0.28841in" />
+<img src="images/media/image8.png"
+style="width:6.5in;height:0.28841in" />
 
 **Section 2: Binning**
 
@@ -290,7 +297,8 @@ MetaBAT2\[6\] and MaxBin2\[7\]. Tetranucleotide frequency and abundance
 > comprehensive comparison of softwares for binning/bin refinement:
 > (<https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03667-3#Sec2>)*
 
-<img src="media/image9.png" style="width:6.5in;height:2.06736in" />
+<img src="images/media/image9.png"
+style="width:6.5in;height:2.06736in" />
 
 **Figure 5.** Length-filtered scaffold FASTA files are provided as input
 for binning softwares such as MetaBat2 and MaxBin2. Read mapping files
@@ -531,7 +539,8 @@ suitable for downstream analyses as metagenome assembled genomes (MAGs).
 
 **CheckM** (<https://github.com/Ecogenomics/CheckM>)
 
-<img src="media/image10.png" style="width:5.52009in;height:1.04921in"
+<img src="images/media/image10.png"
+style="width:5.52009in;height:1.04921in"
 alt="A picture containing text, font, screenshot, rectangle Description automatically generated" />
 
 **Figure 6.** Refined bin FASTA files are provided as input for CheckM,
@@ -578,7 +587,8 @@ Example output:
 <span class="mark">less
 /home/ubuntu/CourseData/MIC_data/mags_workshop/module5/output/refined_bins/KGHS_1-0/KGHS_1-0/KGHS_1-0_bin.1/checkm/checkm.tsv</span>
 
-<img src="media/image11.png" style="width:7.18336in;height:0.71296in" />
+<img src="images/media/image11.png"
+style="width:7.18336in;height:0.71296in" />
 
 These are the most important columns from CheckM.
 
@@ -624,7 +634,8 @@ for downstream annotation.
 
 **GTDB-tk** (<https://github.com/Ecogenomics/GTDBTk>)
 
-<img src="media/image12.png" style="width:5.59355in;height:1.08644in"
+<img src="images/media/image12.png"
+style="width:5.59355in;height:1.08644in"
 alt="A picture containing text, font, screenshot, line Description automatically generated" />
 
 **Figure 7.** Refined bin FASTA files are provided as input for GTDB-tk,
@@ -665,7 +676,8 @@ refined_bins/KGHS_1-0/KGHS_1-0_bin.1/gtdbtk --extension "fa" --cpus 14
 <span class="mark">less
 /home/ubuntu/CourseData/MIC_data/mags_workshop/module5/output/refined_bins/KGHS_1-0/KGHS_1-0/KGHS_1-0_bin.1/gtdbtk/gtdbtk.bac120.summary.tsv</span>
 
-<img src="media/image13.png" style="width:7.14777in;height:0.74074in" />
+<img src="images/media/image13.png"
+style="width:7.14777in;height:0.74074in" />
 
 **user_genome** – The ID of the MAG.
 
@@ -682,7 +694,8 @@ comprehensive pipelines like DRAM use.
 
 **Prokka** (<https://github.com/tseemann/prokka>)
 
-<img src="media/image14.png" style="width:5.28148in;height:1.02583in"
+<img src="images/media/image14.png"
+style="width:5.28148in;height:1.02583in"
 alt="A picture containing text, font, screenshot, line Description automatically generated" />
 
 **Figure 7.** Refined bin FASTA files are provided as input for Prokka,
@@ -739,7 +752,8 @@ Although you will not execute DRAM as part of the in-class tutorial, we
 will provide you with example commands and we will compare the
 pre-computed output files to those generated by Prokka.
 
-<img src="media/image15.png" style="width:5.58261in;height:1.08431in"
+<img src="images/media/image15.png"
+style="width:5.58261in;height:1.08431in"
 alt="A picture containing text, font, screenshot, line Description automatically generated" />
 
 **Figure 8.** Refined bin FASTA files are again provided as input for
@@ -788,13 +802,15 @@ Example output:
 <span class="mark">less
 /home/ubuntu/CourseData/MIC_data/mags_workshop/module5/output/refined_bins/KGHS_1-0/KGHS_1-0_bin.1/dram/annotations.tsv</span>
 
-<img src="media/image16.png" style="width:7.26852in;height:1.09183in" />
+<img src="images/media/image16.png"
+style="width:7.26852in;height:1.09183in" />
 
 <span class="mark">Open the
 /home/ubuntu/CourseData/MIC_data/mags_workshop/module5/output/refined_bins/KGHS_1-0/KGHS_1-0/KGHS_1-0_bin.1/dram/genome_summaries/product.html</span>
 in a browser window i.e. chrome
 
-<img src="media/image17.png" style="width:7.03704in;height:4.39815in" />
+<img src="images/media/image17.png"
+style="width:7.03704in;height:4.39815in" />
 
 **Exercise**:
 
@@ -854,7 +870,7 @@ annotation in Prokka.*
 
 **mobileOG-db** (<https://github.com/clb21565/mobileOG-db>)
 
-<img src="media/image18.png" style="width:6.5in;height:1.32986in"
+<img src="images/media/image18.png" style="width:6.5in;height:1.32986in"
 alt="A picture containing text, font, screenshot, line Description automatically generated" />
 
 **\# Run diamond on the mobileOG-db.**
@@ -881,7 +897,8 @@ Example output:
 /home/ubuntu/CourseData/MIC_data/mags_workshop/module5/output/refined_bins/KGHS_1-0/KGHS_1-0/KGHS_1-0_bin.1/mobileog_db
 /annotation.mobileOG.Alignment.Out.csv</span>
 
-<img src="media/image19.png" style="width:7.35787in;height:1.0463in" />
+<img src="images/media/image19.png"
+style="width:7.35787in;height:1.0463in" />
 
 You can expect to find the follow types of mobile elements;
 
@@ -927,7 +944,7 @@ SRA experiment page. For your convenience we have provided the following
 link
 (<https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=838641>)
 
-<img src="media/image20.png" style="width:6.5in;height:4.0625in"
+<img src="images/media/image20.png" style="width:6.5in;height:4.0625in"
 alt="A screenshot of a computer Description automatically generated" />
 
 Once you are at the following page you can click on the “Send to:” drop
@@ -938,7 +955,7 @@ with each having an SRA Run ID and a sample name in the file that we can
 use to download each shotgun metagenome paired end read set using the
 fasterq-dump program within the NCBI SRA toolkit.
 
-<img src="media/image21.png" style="width:6.5in;height:4.0625in"
+<img src="images/media/image21.png" style="width:6.5in;height:4.0625in"
 alt="A screenshot of a computer Description automatically generated" />
 
 We can then use the “SraRunInfo.csv” file to download each sample using
@@ -988,7 +1005,7 @@ Link to scripts here.
 
 eggnog-mapper (<https://github.com/eggnogdb/eggnog-mapper>)
 
-<img src="media/image22.png" style="width:6.5in;height:1.06944in"
+<img src="images/media/image22.png" style="width:6.5in;height:1.06944in"
 alt="A picture containing text, font, screenshot, number Description automatically generated" />
 
 The eggnog-mapper program annotates a protein fasta file using the
@@ -1011,7 +1028,8 @@ refined_bins/KGHS_1-0/KGHS_1-0_bin.1/eggnog_mapper/KGHS_1-0_bin.1
 
 Example output:
 
-<img src="media/image23.png" style="width:7.36508in;height:1.07407in" />
+<img src="images/media/image23.png"
+style="width:7.36508in;height:1.07407in" />
 
 <span class="mark">less
 /home/ubuntu/CourseData/MIC_data/mags_workshop/module5/output/refined_bins/KGHS_1-0/KGHS_1-0/KGHS_1-0_bin.1/eggnog_mapper/KGHS_1-0_bin.1.emapper.annotations</span>
@@ -1073,7 +1091,7 @@ positions of the open reading frames.*
 
 run_dbCAN4 (<https://github.com/linnabrown/run_dbcan>)
 
-<img src="media/image24.png" style="width:6.5in;height:1.32986in"
+<img src="images/media/image24.png" style="width:6.5in;height:1.32986in"
 alt="A close-up of a computer code Description automatically generated with low confidence" />
 
 The run_dbcan software annotates a protein fasta file with carbohydrate
@@ -1100,7 +1118,8 @@ Example output from overview.txt. Open the KGHS_1-0_bin.1 overview.txt
 file using the less command. You will see the following columns. One row
 for each CAZyme classified.
 
-<img src="media/image25.png" style="width:6.5in;height:1.19861in" />
+<img src="images/media/image25.png"
+style="width:6.5in;height:1.19861in" />
 
 **Gene ID** – The prokka locus tag
 
